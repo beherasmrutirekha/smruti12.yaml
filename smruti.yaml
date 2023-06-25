@@ -1,0 +1,20 @@
+---
+- name: first playbook
+  hosts: all
+  become: true
+  remote_user: ansible
+  taska:
+    - name: package install
+	    yum:
+	      name: httpd
+	  	  state: latest
+		
+	  - name: service start
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+    - name: copy index file
+      copy:
+        content: "hello world\n"
+        dest: /var/www/html/index.html
