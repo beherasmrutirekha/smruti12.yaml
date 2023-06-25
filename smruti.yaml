@@ -8,4 +8,3 @@
       yum:
         name: vsftpd
 	state: present
- 
