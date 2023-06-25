@@ -2,7 +2,7 @@
 - name: package installation
   hosts: all
   become: yes
-  remote_user: ansible
+  remote_user: root
   tasks:
     - name: httpd package installation
       yum:
