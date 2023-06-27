@@ -1,8 +1,8 @@
 ---
 - name: user creation
   hosts: all
-  become: yes
-  remote_user: ansible
+  become: true
+  remote_user: root
   tasks:
     - name: user creation
       yum:
