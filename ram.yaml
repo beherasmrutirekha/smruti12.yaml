@@ -1,0 +1,10 @@
+---
+- name: user creation
+  hosts: all
+  become: yes
+  remote_user: ansible
+  tasks:
+    - name: user creation
+      user:
+        name: simaa
+        state: present
