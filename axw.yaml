@@ -1,0 +1,10 @@
+---
+- name: this is my playbook
+  hosts: all
+  become: true
+  remote_user: root
+  tasks:
+    - name: package installation
+      yum:
+        name: httpd
+        state: latest
