@@ -1,0 +1,9 @@
+---
+- name: this is my git playbook
+  hosts: all
+  become: true
+  remote_user: root
+  tasks:
+    - name: to show message
+      debug:
+        msg: "this is my github playbook"
