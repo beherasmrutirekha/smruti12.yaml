@@ -1,0 +1,9 @@
+---
+- name: this is a playbook
+  hosts: all
+  become: true
+  remote_user: root
+  tasks:
+    - name: to show message
+      debug:
+        msg: "hello this is my first testing using awx tower"
