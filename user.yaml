@@ -1,0 +1,10 @@
+---
+- name: this is my playbook
+  hosts: all
+  become: yes
+  remote_user: root
+  tasks:
+    - name: user creation
+      user:
+        name: time
+        state: present
